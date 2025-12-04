@@ -3,12 +3,7 @@ import { Link } from 'react-router-dom'
 import { motion } from 'framer-motion'
 
 const Footer = () => {
-  const socialLinks = [
-    { name: 'LinkedIn', icon: '💼', url: '#' },
-    { name: 'Twitter', icon: '🐦', url: '#' },
-    { name: 'GitHub', icon: '💻', url: '#' },
-    { name: 'Email', icon: '📧', url: 'mailto:info@heroinformationtech.com' }
-  ]
+  
 
   return (
     <footer className="bg-gray-50 dark:bg-gray-800 border-t border-gray-200 dark:border-gray-700">
@@ -29,19 +24,7 @@ const Footer = () => {
                 Transforming businesses through innovative technology solutions, 
                 professional services, and global delivery excellence.
               </p>
-              <div className="flex space-x-4">
-                {socialLinks.map((social, index) => (
-                  <motion.a
-                    key={social.name}
-                    href={social.url}
-                    className="w-10 h-10 bg-white dark:bg-gray-700 rounded-full flex items-center justify-center shadow-sm hover:shadow-md transition-shadow"
-                    whileHover={{ scale: 1.1, y: -2 }}
-                    whileTap={{ scale: 0.95 }}
-                  >
-                    <span className="text-lg">{social.icon}</span>
-                  </motion.a>
-                ))}
-              </div>
+              
             </div>
 
             {/* Quick Links */}
@@ -65,8 +48,8 @@ const Footer = () => {
               <h3 className="font-semibold text-gray-900 dark:text-white mb-4">Contact</h3>
               <div className="flex flex-col space-y-2 text-gray-600 dark:text-gray-400">
                 <p>Amman, Jordan</p>
-                <p>info@heroinformationtech.com</p>
-                <p>+1 (555) 123-4567</p>
+                <p>Khaled@heroinformationtech.com</p>
+                <p>+90 552 6220200</p>
               </div>
             </div>
           </div>

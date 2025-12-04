@@ -1,5 +1,5 @@
-@import "tailwindcss";
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+@import "tailwindcss";
 
 
 
@@ -9,6 +9,7 @@ body {
   color: #1e293b;
   line-height: 1.6;
   overflow-x: hidden;
+  zoom: 80% ;
 }
 
 html {
@@ -468,3 +469,20 @@ select:focus {
 }
 
 
+/* Optional: Add smooth transitions for all elements */
+* {
+  @apply transition-colors duration-200;
+}
+
+/* Optional: Custom scrollbar for modern browsers */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-gray-100;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-gradient-to-b from-blue-500 to-purple-600 rounded-full;
+}

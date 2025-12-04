@@ -66,7 +66,7 @@ const Header = () => {
           </motion.div>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center space-x-1">
+          <div className="hidden md:flex items-center space-x-1 text-xl">
             {navigation.map((item, index) => (
               <motion.div
                 key={item.name}
@@ -119,7 +119,7 @@ const Header = () => {
               exit="closed"
               className="md:hidden overflow-hidden"
             >
-              <div className="py-4 border-t border-gray-200 mt-4">
+              <div className="py-4 border-t border-gray-200 mt-4 bg-white/95  shadow-soft rounded-lg">
                 <div className="flex flex-col space-y-3">
                   {navigation.map((item) => (
                     <Link
